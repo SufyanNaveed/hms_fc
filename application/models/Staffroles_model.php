@@ -1,24 +1,2 @@
-<?php
-
-if (!defined('BASEPATH')) {
-    exit('No direct script access allowed');
-}
-
-class Staffroles_model extends CI_Model
-{
-
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    public function getStaffRoles($staffid)
-    {
-        $this->db->select('staff_roles.*,roles.name');
-        $this->db->from('staff_roles');
-        $this->db->join('roles', 'roles.id=staff_roles.role_id', 'inner');
-        $this->db->where('staff_roles.staff_id', $staffid);
-        $query = $this->db->get();
-        return $query->result();
-    }
-}
+<?php bolt_decrypt( __FILE__ , BOLT_KEY); return 0;
+    ##!!!##AgHj/wIzKzPQzdDNLCnj6+QnKCksMSgn6+oFBBYIEwQXC+rs7OM+0M3j4+PjKDssN+vqETLjJyw1KCY34zYmNSwzN+MkJiYoNjbjJC8vMjooJ+rs/tDNQNDN0M0mLyQ2NuMWNyQpKTUyLyg2IjAyJygv4yg7NygxJzbjBgwiEDInKC/QzT7QzdDN4+Pj4zM4JS8sJuMpODEmNywyMeMiIiYyMTY3NTgmN+vs0M3j4+PjPtDN4+Pj4+Pj4+MzJDUoMTf9/SIiJjIxNjc1OCY36+z+0M3j4+PjQNDN0M3j4+PjMzglLywm4yk4MSY3LDIx4yooNxY3JCkpFTIvKDbr5zY3JCkpLCfs0M3j4+PjPtDN4+Pj4+Pj4+PnNyssNvABJyXwATYoLygmN+vqNjckKSkiNTIvKDbx7e81Mi8oNvExJDAo6uz+0M3j4+Pj4+Pj4+c3Kyw28AEnJfABKTUyMOvqNjckKSkiNTIvKDbq7P7QzePj4+Pj4+Pj5zcrLDbwAScl8AEtMiwx6+o1Mi8oNurv4+o1Mi8oNvEsJwA2NyQpKSI1Mi8oNvE1Mi8oIiwn6u/j6iwxMSg16uz+0M3j4+Pj4+Pj4+c3Kyw28AEnJfABOisoNSjr6jY3JCkpIjUyLyg28TY3JCkpIiwn6u/j5zY3JCkpLCfs/tDN4+Pj4+Pj4+PnNDgoNTzjAOPnNyssNvABJyXwASooN+vs/tDN4+Pj4+Pj4+M1KDc4NTHj5zQ4KDU88AE1KDY4Lzfr7P7QzePj4+NA0M1A0M0=

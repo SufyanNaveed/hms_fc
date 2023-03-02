@@ -1,16 +1,2 @@
-<?php
-
-class Chargetype_model extends CI_Model
-{
-    public function add($data)
-    {
-        $this->db->insert('charge_type_master', $data);
-        return $this->db->insert_id();
-    }
-
-    public function delete($id)
-    {
-        $this->db->where("id", $id)->where("is_default", 'no')->delete('charge_type_master');
-    }
-
-}
+<?php bolt_decrypt( __FILE__ , BOLT_KEY); return 0;
+    ##!!!##AgHj/wIzKzPQzdDNJi8kNjbjBiskNSooNzwzKCIwMicoL+MoOzcoMSc24wYMIhAyJygv0M0+0M3j4+PjMzglLywm4yk4MSY3LDIx4yQnJ+vnJyQ3JOzQzePj4+M+0M3j4+Pj4+Pj4+c3Kyw28AEnJfABLDE2KDU36+omKyQ1KigiNzwzKCIwJDY3KDXq7+PnJyQ3JOz+0M3j4+Pj4+Pj4zUoNzg1MePnNyssNvABJyXwASwxNig1NyIsJ+vs/tDN4+Pj40DQzdDN4+Pj4zM4JS8sJuMpODEmNywyMeMnKC8oNyjr5ywn7NDN4+Pj4z7QzePj4+Pj4+Pj5zcrLDbwAScl8AE6Kyg1KOvlLCfl7+PnLCfs8AE6Kyg1KOvlLDYiJygpJDgvN+Xv4+oxMurs8AEnKC8oNyjr6iYrJDUqKCI3PDMoIjAkNjcoNers/tDN4+Pj40DQzdDNQNDN

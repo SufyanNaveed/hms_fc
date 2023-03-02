@@ -1,25 +1,2 @@
-<?php
-
-class Blood_donorcycle_model extends CI_Model
-{
-
-    public function donorCycle($donor_cycle)
-    {
-        $this->db->insert('blood_donor_cycle', $donor_cycle);
-    }
-
-    public function getDonorBloodBatch($blood_donor_id)
-    {
-        $this->db->select('blood_donor_cycle.*, blood_donor.id as blood_donor_id, blood_donor.created_at as donate_date');
-        $this->db->join('blood_donor', 'blood_donor_cycle.blood_donor_id = blood_donor.id', 'inner');
-        $this->db->where('blood_donor.id', $blood_donor_id);
-        $query = $this->db->get('blood_donor_cycle');
-        return $query->result();
-    }
-
-    public function deleteCycle($id)
-    {
-        $this->db->where("id", $id)->delete('blood_donor_cycle');
-    }
-
-}
+<?php bolt_decrypt( __FILE__ , BOLT_KEY); return 0;
+    ##!!!##AgHj/wIzKzPQzdDNJi8kNjbjBS8yMiciJzIxMjUmPCYvKCIwMicoL+MoOzcoMSc24wYMIhAyJygv0M0+0M3QzePj4+MzOCUvLCbjKTgxJjcsMjHjJzIxMjUGPCYvKOvnJzIxMjUiJjwmLyjs0M3j4+PjPtDN4+Pj4+Pj4+PnNyssNvABJyXwASwxNig1N+vqJS8yMiciJzIxMjUiJjwmLyjq7+PnJzIxMjUiJjwmLyjs/tDN4+Pj40DQzdDN4+Pj4zM4JS8sJuMpODEmNywyMeMqKDcHMjEyNQUvMjInBSQ3Jivr5yUvMjInIicyMTI1Iiwn7NDN4+Pj4z7QzePj4+Pj4+Pj5zcrLDbwAScl8AE2KC8oJjfr6iUvMjInIicyMTI1IiY8Ji8o8e3v4yUvMjInIicyMTI18Swn4yQ24yUvMjInIicyMTI1Iiwn7+MlLzIyJyInMjEyNfEmNSgkNygnIiQ34yQ24ycyMSQ3KCInJDco6uz+0M3j4+Pj4+Pj4+c3Kyw28AEnJfABLTIsMevqJS8yMiciJzIxMjXq7+PqJS8yMiciJzIxMjUiJjwmLyjxJS8yMiciJzIxMjUiLCfjAOMlLzIyJyInMjEyNfEsJ+rv4+osMTEoNers/tDN4+Pj4+Pj4+PnNyssNvABJyXwATorKDUo6+olLzIyJyInMjEyNfEsJ+rv4+clLzIyJyInMjEyNSIsJ+z+0M3j4+Pj4+Pj4+c0OCg1POMA4+c3Kyw28AEnJfABKig36+olLzIyJyInMjEyNSImPCYvKOrs/tDN4+Pj4+Pj4+M1KDc4NTHj5zQ4KDU88AE1KDY4Lzfr7P7QzePj4+NA0M3QzePj4+MzOCUvLCbjKTgxJjcsMjHjJygvKDcoBjwmLyjr5ywn7NDN4+Pj4z7QzePj4+Pj4+Pj5zcrLDbwAScl8AE6Kyg1KOvlLCfl7+PnLCfs8AEnKC8oNyjr6iUvMjInIicyMTI1IiY8Ji8o6uz+0M3j4+PjQNDN0M1A0M0=
